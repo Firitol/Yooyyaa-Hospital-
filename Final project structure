@@ -1,0 +1,19 @@
+hospital-api/
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── config.py
+├── app.py
+├── models.py
+├── schemas.py          # ← Marshmallow schemas
+├── auth.py             # ← JWT auth utils
+├── api/
+│   ├── __init__.py
+│   ├── auth.py         # POST /login
+│   ├── patients.py     # CRUD
+│   ├── doctors.py      # CRUD + availability
+│   ├── appointments.py # Booking
+│   └── billing.py      # Bills & payments
+├── instance/
+│   └── hospital.db     # (auto-created, gitignored)
+└── docs/               # (optional: Swagger UI screenshots)
