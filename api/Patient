@@ -1,0 +1,10 @@
+curl -X POST http://localhost:5000/api/patients \
+  -H "Authorization: Bearer <JWT_TOKEN>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Alice Johnson",
+    "age": 28,
+    "gender": "Female",
+    "contact": "555-9876",
+    "address": "789 Pine St"
+  }'
